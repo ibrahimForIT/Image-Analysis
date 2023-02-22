@@ -1,0 +1,136 @@
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    }
+    
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        background: #5256ad;
+    }
+    
+    .drag-area {
+        border: 2px dashed #fff;
+        height: 500px;
+        width: 100%;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+    
+    .drag-area.active {
+        border: 2px solid #fff;
+    }
+    
+    .drag-area .icon {
+        font-size: 100px;
+        color: #fff;
+    }
+    
+    .drag-area header {
+        font-size: 30px;
+        font-weight: 500;
+        color: #fff;
+    }
+    
+    .drag-area span {
+        font-size: 25px;
+        font-weight: 500;
+        color: #fff;
+        margin: 10px 0 15px 0;
+    }
+    
+    .drag-area button {
+        padding: 10px 25px;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background: #fff;
+        color: #5256ad;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .drag-area input {
+        padding: 10px 25px;
+        font-size: 20px;
+        font-weight: 500;
+        border: none;
+        outline: none;
+        background: #fff;
+        color: #5256ad;
+        border-radius: 5px;
+        cursor: pointer;
+        width: 350px;
+    }
+    
+    .drag-area img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        border-radius: 5px;
+    }
+    
+    .logo {
+        width: 10%;
+        height: 15%;
+        margin-top: 0px;
+        margin-left: 380px;
+    }
+    
+    .con .btn {
+        margin-left: 39%;
+        width: 190px;
+        height: 70px;
+        color: #5256ad;
+        background-color: #fff;
+        border-radius: 6px;
+        cursor: pointer;
+        border: 2px solid #5256ad;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .con .btn:hover {
+        background-color: #5256ad;
+        color: #fff;
+        border-color: #fff;
+    }
+    
+    .loader {
+        border: 5px solid #5256ad;
+        border-radius: 50%;
+        border-top: 5px solid #ffffff;
+        width: 30px;
+        height: 30px;
+        -webkit-animation: spin 1s linear infinite;
+        /* Safari */
+        animation: spin 1s linear infinite;
+    }
+    /* Safari */
+    
+    @-webkit-keyframes spin {
+        0% {
+            -webkit-transform: rotate(0deg);
+        }
+        100% {
+            -webkit-transform: rotate(360deg);
+        }
+    }
+    
+    @keyframes spin {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
